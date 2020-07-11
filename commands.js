@@ -354,6 +354,12 @@ var commandsCommand = [
         "duration": 4500
     },
     {
+        "command" : "happy",
+        "type": "img",
+        "url" : "https://media0.giphy.com/media/KDsOUfSLGWR9CXR2fD/giphy.gif",
+        "duration": 3200
+    },
+    {
         "command" : "barney",
         "type": "img",
         "url" : "https://media1.tenor.com/images/a315759800b4466d53c6a6397a41d579/tenor.gif",
