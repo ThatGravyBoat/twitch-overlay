@@ -1,5 +1,11 @@
 var commandsCommand = [
     {
+        "command" : "Punch",
+        "type": "video-chat",
+        "url" : "https://media.tenor.co/videos/b3d024927cd9be10e930ded56f596159/mp4",
+        "duration": 1000
+    },
+    {
         "command" : "dense",
         "type": "img",
         "url" : "https://cdn.dribbble.com/users/504431/screenshots/2908430/roofat_1080px__uc_2_1.gif",

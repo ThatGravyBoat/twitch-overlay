@@ -89,4 +89,29 @@ ComfyJS.onCommand = ( user, command, message, flags, extra) => {
         }
     }
 }
+ComfyJS.onChat = ( user, message, flags, self, extra ) => {
+    if (commands.includes(message.trim())) {
+        command = commandsCommand[commands.indexOf(command)];
+        if (command.type === "text-chat"){
+            commandQueue.push(queueFunction(textPopup, this, [`${command.text}`,`${command.duration}`]));
+            if (!queueStarted){
+                queueStart()
+            }
+        }
+        if (command.type === "img-chat"){
+            commandQueue.push(queueFunction(gifOrImgPopup, this, [`${command.url}`,`${command.duration}`]));
+            if (!queueStarted){
+                queueStart()
+            }
+        }
+        if (command.type === "video-chat"){
+            commandQueue.push(queueFunction(videoPopup, this, [`${command.url}`,`${command.duration}`,`${command.volume}`]));
+            if (!queueStarted){
+                queueStart()
+            }
+        }
+    }
+}
+
+
 ComfyJS.Init( "BotDagger", "oauth:" + params.get( "oauth" ), "JaxDagger" );
