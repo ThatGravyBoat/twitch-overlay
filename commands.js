@@ -506,7 +506,7 @@ var periodicPopups = [
         "name": "website",
         "type": "img",
         "msg": "",
-        "url": "https://i.imgur.com/m9wzZSC.png",
+        "url": "https://i.imgur.com/UdKyPSV.png",
         "duration": 5000
     }
 ]
