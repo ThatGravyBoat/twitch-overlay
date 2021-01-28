@@ -452,7 +452,9 @@ var commandsCommand = [
 
 ];
 
-var periodicPopups = [
+var periodicPopups = []
+
+/*
     {
         "name": "sub",
         "type": "img",
@@ -509,4 +511,4 @@ var periodicPopups = [
         "url": "https://i.imgur.com/UdKyPSV.png",
         "duration": 5000
     }
-]
+*/
