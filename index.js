@@ -9,7 +9,9 @@ function setCommands() {
     commandsCommand.forEach(command => {
         commands.push(command.command)
     })
-    periodicPromos()
+    if (periodicPopups.length > 1){
+        periodicPromos()
+    }
 }
 
 function periodicPromos() {
